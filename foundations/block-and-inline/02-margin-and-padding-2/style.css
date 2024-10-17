@@ -37,7 +37,6 @@ body {
 button {
   background: white;
   border: 1px solid #eee;
-  /* correct */
   margin: 0 auto;
   display: block;
   padding: 8px 24px;
