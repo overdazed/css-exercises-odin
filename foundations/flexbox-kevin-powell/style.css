@@ -1,0 +1,22 @@
+.nav-list {
+    /* parent = ground rules*/
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    flex-wrap: wrap; /* wrap down to line */
+    gap: 1rem; /* adds spacing between things */
+}
+
+.nav-list li {
+    /* children = ultimate control*/
+
+    /*width: min-content;*/
+    /*width: max-content;*/
+
+    flex-grow: 0; /* default */
+    flex-grow: 1; /* takes up leftover space and distributes it evenly */
+    flex-shrink: 1; /* default */
+}
