@@ -1,6 +1,30 @@
 .container {
     border: 5px solid #ffcc5c;
     display: flex;
-    /* they stretch along cross axis*/
+    /* set height in html, body also to 100% to have responsive cross axis */
     height: 100%;
+
+    /* align-items controls items on cross axis */
+    /* align-items: stretch; is default */
+
+    /* pushed to the top, take up as much space as needed */
+    /* align-items: flex-start; */
+    /* pushes downwards */
+    /* align-items: flex-end; */
+    /* center it */
+    align-items: center;
+
+    /* CENTER A BUTTON */
+    /*justify-content: center;*/
+}
+
+/* TARGET A SINGLE ITEM AT A TIME */
+.logout {
+    /* that will push just that item to the top of the axis */
+    align-self: flex-start;
+}
+
+/* 1. "Home" AT THE BOTTOM */
+.home {
+    align-self: flex-end;
 }
