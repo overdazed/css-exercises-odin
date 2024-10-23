@@ -1,8 +1,6 @@
 .container {
     border: 5px solid #ffcc5c;
     display: flex;
-}
-
-. {
-    margin-left: auto;
+    /* they stretch along cross axis*/
+    height: 100%;
 }
