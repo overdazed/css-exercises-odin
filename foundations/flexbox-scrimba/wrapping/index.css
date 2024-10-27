@@ -1,26 +1,15 @@
 .container {
     border: 5px solid #ffcc5c;
     display: flex;
-    /* justify-content no longer controls horizontal, but vertical */
-    flex-direction: column;
-    justify-content: center;
-    /* Set height to 100%, because without it's just as big as the container needs to be */
-    /* html, body needs to be height: 100%; as well */
-    height: 100%;
-
-    /* align-items controls now left to right */
-    align-items: flex-end;
-    /* default: stretch */
+    /* default nowrap */
+    flex-wrap: wrap;
 }
 
-/* 1. Buttons should be on the bottom right */
-/*
-.container {
-    border: 5px solid #ffcc5c;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
-    align-items: flex-end;
+/* target each item */
+.container > div {
+    /* give them a width */
+    /* they fill the whole container, but they're not 300px each */
+    /* scaled down, because the container is not 900px in total */
+    /* when the container is widened, they become 300px */
+    width: 300px;
 }
-*/
