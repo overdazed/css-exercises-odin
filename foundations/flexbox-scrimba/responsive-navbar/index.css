@@ -1,0 +1,26 @@
+.container {
+    border: 5px solid #ffcc5c; /* Rahmen mit 5px Breite und Farbe #ffcc5c */
+    display: flex; /* Flexbox-Layout für die Container */
+}
+.search {
+    flex: 1; /* Suchleiste nimmt den verfügbaren Platz ein */
+}
+@media all and (max-width: 600px) {
+    .container {
+        flex-wrap: wrap; /* Container-Inhalte umbrechen, wenn Bildschirmbreite kleiner als 600px */
+    }
+    .container > li {
+        flex: 1 1 50%; /* Jeder Listeneintrag nimmt 50% der Containerbreite ein */
+    }
+    .search > input {
+        text-align: center; /* Text im Eingabefeld wird zentriert */
+    }
+}
+@media all and (max-width: 400px) {
+    .container > li {
+        flex: 1 1 100%; /* Jeder Listeneintrag nimmt 100% der Containerbreite ein */
+    }
+    .search {
+        order: 1; /* Reihenfolge der Suchleiste wird zuletzt angezeigt */
+    }
+}
