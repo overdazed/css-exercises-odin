@@ -1,0 +1,44 @@
+.container {
+    display: flex; /* lines images after each other */
+    /* because flexbox won't */
+    flex-wrap: wrap; /* now it wraps to an image grid */
+
+    /* center the images */
+    /*justify-content: center;*/
+    /* give space between images */
+    /*justify-content: space-around*/
+    /* PROBLEM: space is not evenly when the grid is not same */
+    /* space-around will do space on each row separately */
+}
+
+.container > div > img {
+    /* that will change their aspect ratio */
+    /*width: 150px;*/
+    /*height: 100px;*/
+
+    /* flexible in width, use percent */
+    width: 100%;
+    height: 100%;
+    /*makes sure an element, like an image or a video,
+    fills its container while maintaining its aspect ratio.*/
+    object-fit: cover;
+}
+
+/* target the items themselves */
+/*.container > div {*/
+    /* base width of 150px */
+    /*flex: 1 1 150px;*/
+
+    /* they now scale up and down and shuffle around when needed */
+/*}
+*/
+
+/* target the normal sized pictures */
+.container > .normal {
+    flex: 1 1 150px;
+}
+
+/* target big pictures, so that on the last row it isn't 5-times as big */
+.container > .big {
+    flex: 1 1 250px;
+}
