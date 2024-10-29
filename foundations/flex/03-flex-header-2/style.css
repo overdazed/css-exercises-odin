@@ -58,5 +58,5 @@ ul {
 .left, .right {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 16px; /* gap between LOGO and links & notification and profile image */
 }
